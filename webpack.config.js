@@ -49,7 +49,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    //public: "localhost"
+    public: "localhost:8080"
   },
   performance: {
     hints: false
