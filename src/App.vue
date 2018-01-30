@@ -103,14 +103,18 @@ export default {
   },
   methods: {
     _loadTweets(){
-      axios.get(`${config.baseURL}/tweets?limit=20`,{})
+      axios.get(`${config.baseURL}/tweets?limit=20`,{
+        withCredentials: true
+      })
       .then( response => {
         this.loading = false;
         this.tweets = response.data.data;
       })
     },
     _loadUsers(){
-      axios.get(`${config.baseURL}/users`,{})
+      axios.get(`${config.baseURL}/users`,{
+        withCredentials: true
+      })
       .then( response => {
         this.users = response.data.data;
       })
@@ -120,6 +124,7 @@ export default {
     },
     create(){
       axios.post(`${config.baseURL}/tweets`, this.tweet, {
+        withCredentials: true,
         headers: {
           'Content-Type': 'application/json'
         }
