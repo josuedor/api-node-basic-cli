@@ -19,6 +19,10 @@ npm run dev
 npm run build
 ```
 
+## Edit Config.json
+
+El archivo `config.json` se encuentra en la ruta `src/config.json` este archivo debe ser editado con el URL del servidor.
+
 ![Webapp funcionando xD](https://thumbs.gfycat.com/GlossySmoggyHairstreakbutterfly-size_restricted.gif)
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
